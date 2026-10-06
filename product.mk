@@ -6,3 +6,5 @@ TARGET_LINUX_CROSS := aarch64-linux-gnu-
 TARGET_CC := $(TARGET_LINUX_CROSS)
 
 # define LOCAL_LINUX_MAKE_BUILD_ARGS with extra make args for building linux
+
+include linux.mk
