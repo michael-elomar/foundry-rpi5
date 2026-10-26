@@ -1,0 +1,12 @@
+# Enable UART for debugging
+enable_uart=1
+
+# Kernel and DTB paths
+kernel=Image
+device_tree=bcm2712-rpi-5-b.dtb
+
+# Disable unused peripherals to save power
+dtparam=audio=off
+dtparam=spi=on
+dtparam=i2c=on
+hdmi_force_hotplug=1
