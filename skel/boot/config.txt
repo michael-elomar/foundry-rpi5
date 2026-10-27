@@ -3,7 +3,7 @@ enable_uart=1
 
 # Kernel and DTB paths
 kernel=Image
-device_tree=bcm2712-rpi-5-b.dtb
+device_tree=broadcom/bcm2712-rpi-5-b.dtb
 
 # Disable unused peripherals to save power
 dtparam=audio=off
