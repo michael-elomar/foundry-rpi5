@@ -1,7 +1,14 @@
 #! /bin/sh
 
+mkdir -p /proc /sys /dev /tmp /run
+
 mount -t proc none /proc
 mount -t sysfs none /sys
+mount -t devtmpfs none /dev
+
+mount -t tmpfs tmpfs /tmp
+mount -t tmpfs tmpfs /run
+
 
 cat <<!
 
