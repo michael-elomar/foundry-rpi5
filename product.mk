@@ -15,6 +15,13 @@ KERNEL_ARCHIVE_NAME := stable_20260911.tar.gz
 KERNEL_SRC_FOLDER = linux-stable_20260911
 TARGET_KERNEL_CONFIG := bcm2712_defconfig
 
+# image parameters
+TARGET_IMAGE_PARTITIONS := \
+	fat32 200M $(TARGET_STAGING_DIR)/boot \
+	ext2 500M $(TARGET_STAGING_DIR)
+
+TARGET_IMAGE_NAME := avalon.img
+
 # define LOCAL_LINUX_MAKE_BUILD_ARGS with extra make args for building linux
 
 
